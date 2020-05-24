@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <title>好啦测评-罗课学堂</title>
+    <style>
+    body {
+        font-family: "Microsoft YaHei" !important;
+    }
+
+    input {
+        font-family: "Microsoft YaHei" !important;
+    }
+
+    .post-count .el-input {
+        width: 150px;
+    }
+
+    .workbench .el-dialog__headerbtn .el-dialog__close {
+        display: none;
+    }
+
+    .noP {
+        padding: 11px 0px !important;
+    }
+
+    .email .el-dialog {
+        width: 1000px !important;
+    }
+
+    .ddddd .el-dialog {
+        width: 419px !important;
+    }
+
+    .column .el-tabs__nav {
+        margin-left: 444px;
+        margin-top: 20px;
+    }
+
+    .column .el-tabs__item {
+        width: 146px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 4px;
+        color: rgba(144, 145, 156, 1);
+        border: 1px solid rgba(144, 145, 156, 1);
+        font-size: 18px;
+        text-align: center;
+        padding: 0px !important;
+        margin: 0 10px;
+    }
+
+    .column .el-tabs__item.is-active {
+        width: 146px;
+        height: 50px;
+        line-height: 50px;
+        background: rgba(89, 96, 237, 1);
+        box-shadow: 0px 3px 9px 0px rgba(85, 75, 170, 0.51);
+        border-radius: 4px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 18px;
+        text-align: center;
+        padding-right: 0px;
+        border: 0px;
+        margin: 10px;
+    }
+
+    .column .el-tabs__active-bar {
+        display: none;
+    }
+
+    .email .el-dialog__header {
+        height: 40px;
+        background: rgba(250, 250, 250, 1);
+        border-radius: 2px 2px 0px 0px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+    .release .el-tabs__item {
+        font-weight: bold !important;
+    }
+
+    .box {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .home .el-tabs__nav-wrap::after {
+        display: none;
+    }
+
+    .release .el-tabs__item {
+        height: 63px;
+        line-height: 63px;
+        font-size: 16px;
+        background: rgba(245, 247, 254, 1);
+    }
+
+    .release .el-tabs__item.is-active {
+        color: #fff;
+        background-color: #5960ED;
+    }
+
+    .release .el-tabs__content {
+        /* padding-right: 30px; */
+        padding-top: 15px;
+        padding-bottom: 20px;
+        min-height: 430px;
+    }
+
+    .user-buy-form .el-input__inner {
+        width: 180px !important;
+    }
+
+    .release .el-input__inner {
+        width: 240px;
+    }
+
+    .release .tables-nav .el-input__inner {
+        width: 40px;
+    }
+
+    .main-top-count-screen .el-input__inner {
+        width: 131px;
+        /* margin-right: 20px; */
+    }
+
+    .frame .custom-tree-node {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        padding-right: 20px;
+    }
+
+    .system .search .el-input__inner {
+        width: 188px;
+        float: left;
+    }
+
+    .users .el-input__inner {
+        width: 300px;
+    }
+
+    .main-div-nav .el-input__inner {
+        width: 20px;
+    }
+
+    .home .el-carousel__indicators--horizontal {
+        bottom: 70px;
+    }
+
+    .vip .el-upload-dragger {
+        width: 300px;
+    }
+
+    .evaluation .el-radio__label,
+    .user-buy-mode .el-radio__label {
+        display: none;
+    }
+
+    .manage-detail .el-menu-item.is-active {
+        background-color: #EEEFFE !important;
+    }
+
+    .contrast ul li {
+        list-style: none;
+    }
+
+    .post-count .el-input__inner {
+        width: 150px;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .email .el-dialog__header {
+        padding: 0px;
+    }
+
+    .email .el-dialog__title {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: rgba(50, 53, 65, 1);
+        margin-left: 20px;
+    }
+
+    .email .el-dialog__headerbtn {
+        display: none;
+    }
+
+    .workbench .el-dialog__body {
+        padding: 20px 61px;
+    }
+    .flex {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+    }
+
+    .flex-main {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        position: relative;
+    }
+    </style>
+</head>
+
+<body style="background-color:#E8EBED;">
+    <noscript>
+        <strong>We're sorry but luoke-hola-web doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>
